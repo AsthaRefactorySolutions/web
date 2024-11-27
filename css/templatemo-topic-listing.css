@@ -243,7 +243,7 @@ strong {
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  background-image: linear-gradient(15deg, #860606 0%, #dec403 100%);
   padding-top: 150px;
   padding-bottom: 80px;
 }
@@ -1310,4 +1310,38 @@ blockquote {
 
 
 
+  
+table {
+    margin-top: 40px;
+    margin-left: 120px;
+    width: 80%;
+    font-family: Arial, sans-serif;
+    border: 5px solid darkgoldenrod;
+    
+}
 
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.red-header {
+    background-color: #FF0000;
+    color: white;
+}
+
+.main-header {
+    background-color: rgb(255, 196, 0);
+    color: white;
+    align-items: center;
+  
+}
