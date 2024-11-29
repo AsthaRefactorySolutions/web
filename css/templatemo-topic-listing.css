@@ -1347,3 +1347,12 @@ tr:nth-child(even) {
   background-color: #f50057;
   color: white;
 }
+
+.logo {
+    float: left; 
+    height: 300px; 
+    margin-right: 30px; 
+    margin-top: -80px;
+    border: none; 
+    padding: 0; 
+}
