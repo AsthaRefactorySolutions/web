@@ -1366,5 +1366,21 @@ tr:nth-child(even) {
 
 
 
+.main-container {
+  text-align: center;
+}
 
+.main-image {
+  width: 50%;
+  margin: 20px auto;
+}
 
+.text-content {
+  text-align: justify;
+  padding: 20px;
+  font-family: Calibri;
+  font-size: 14px;
+  color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+}
