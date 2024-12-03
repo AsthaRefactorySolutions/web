@@ -11,7 +11,7 @@ https://templatemo.com/tm-590-topic-listing
 -----------------------------------------*/
 :root {
   --white-color: #ffffff;
-  --primary-color: #e3cc00;
+  --primary-color: #ff0000;
   --secondary-color: #ba0909;
   --section-bg-color: #ba0909;
   --custom-btn-bg-color: #e24035;
@@ -243,7 +243,7 @@ strong {
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
-  background-image: linear-gradient(15deg, #860606 0%, #dec403 100%);
+    background-image: linear-gradient(90deg, #FF7300 0%, #FFFFFF 90%);
   padding-top: 150px;
   padding-bottom: 80px;
 }
@@ -1383,4 +1383,19 @@ tr:nth-child(even) {
   color: black;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+
+
+.logo-container {
+    /* Adjust width and height as needed */
+    width: 145px;
+    height: 9px;
+    margin-top: -71px;
+}
+
+.logo-image {
+    /* Adjust width and height as needed */
+    width: 100%;
+    height: 140px;
 }
