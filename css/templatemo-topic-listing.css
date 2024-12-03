@@ -248,6 +248,13 @@ background-image: linear-gradient(90deg, #FF7300 0%, #FFFFFF 90%);
   padding-bottom: 80px;
 }
 
+
+.site-header2 {
+    background-image: linear-gradient(90deg, #980d0d 0%, #ff7700 90%);
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+
 .site-header .container {
   height: 100%;
 }
