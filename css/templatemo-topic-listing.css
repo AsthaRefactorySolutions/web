@@ -915,82 +915,87 @@ blockquote {
 /*---------------------------------------
   SITE FOOTER              
 -----------------------------------------*/
-.site-footer {
-  border-bottom: 10px solid var(--secondary-color);
-  position: relative;
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+body1 {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.site-footer::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 200px 200px;
-  border-color: transparent transparent var(--secondary-color) transparent;
-  pointer-events: none;
+.footer {
+  background: linear-gradient(to top, #8b0000, #ffa500); /* Gradient background */
+  color: white;
+  padding: 20px;
 }
 
-.site-footer-title {
-  color: var(--primary-color);
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.site-footer .dropdown-menu {
-  padding: 0;
+.map-container {
+  width: 48%;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.site-footer .dropdown-item {
-  color: var(--p-color);
-  font-size: var(--menu-font-size);
-  font-weight: var(--font-weight-medium);
-  padding: 4px 18px;
+.footer-info {
+  width: 48%;
 }
 
-.site-footer .dropdown-item:hover {
-  background-color: transparent;
-  color: var(--primary-color);
+.footer-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.site-footer .dropdown-menu li:first-child .dropdown-item {
-  padding-top: 10px;
+.footer-info p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 5px 0;
 }
 
-.site-footer .dropdown-menu li:last-child .dropdown-item {
-  padding-bottom: 12px;
+.footer-info a {
+  color: #ffd700;
+  text-decoration: none;
 }
 
-.site-footer .dropdown-toggle {
-  background-color: var(--secondary-color);
-  border-color: var(--white-color);
+.footer-info a:hover {
+  text-decoration: underline;
 }
 
-.site-footer .dropdown-toggle:hover {
-  background-color: var(--primary-color);
-  border-color: transparent;
+.footer-social {
+  margin: 15px 0;
 }
 
-.site-footer-links {
-  padding-left: 0;
+.footer-social a {
+  font-size: 20px;
+  color: #ffd700;
+  margin-right: 15px;
+  text-decoration: none;
 }
 
-.site-footer-link-item {
-  display: block;
-  list-style: none;
-  line-height: normal;
+.footer-social a:hover {
+  color: #fff;
 }
 
-.site-footer-link {
-  color: var(--secondary-color);
-  font-size: var(--copyright-font-size);
-  font-weight: var(--font-weight-medium);
-  line-height: normal;
+.footer-links {
+  margin: 15px 0;
+  font-size: 14px;
 }
 
-.copyright-text {
-  font-size: var(--copyright-font-size);
-}
+
+
+
+
+
+
+
+
 
 /*---------------------------------------
   SOCIAL ICON               
@@ -1417,7 +1422,31 @@ tr:nth-child(even) {
 
 
 
+.gradient-box {
+  background: linear-gradient(to right, #8B0000, #FFA500);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 
+.gradient-box button {
+  background-color: white;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gradient-box button:hover {
+  background-color: #ff8903;
+}
 
 
 
