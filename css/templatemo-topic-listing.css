@@ -14,7 +14,7 @@ https://templatemo.com/tm-590-topic-listing
   --primary-color: #ff0000;
   --secondary-color: #ba0909;
   --section-bg-color: #ba0909;
-  --custom-btn-bg-color: #e24035;
+  --custom-btn-bg-color: #ff8400;
   --custom-btn-bg-hover-color: #b30000;
   --dark-color: #000000;
   --p-color: #000000;
@@ -136,12 +136,12 @@ strong {
   SECTION               
 -----------------------------------------*/
 .section-padding {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 130px;
+  padding-bottom: 40px;
 }
 
 .section-bg {
-  background-image: linear-gradient(90deg, #ff7300 0%, #ffffff 90%);
+   background-image: linear-gradient(30deg, #B40F0F 0%, #FEB501 90%);
 }
 
 .section-overlay {
@@ -285,7 +285,7 @@ strong {
 }
 
 .sticky-wrapper.is-sticky .navbar {
-  background-image: linear-gradient(90deg, #ffffff 0%, #ff7300 90%);
+  background-image: linear-gradient(20deg, #FFFFFF 0%, #E37500 90%);
 }
 
 .navbar {
@@ -496,7 +496,7 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-image: linear-gradient(90deg, #ffffff 0%, #ff7300 90%);
+ background-image: linear-gradient(20deg, #FFFFFF 0%, #E37500 90%);
   position: relative;
   overflow: hidden;
   padding: 2.5rem;
@@ -911,7 +911,6 @@ blockquote {
   background: var(--custom-btn-bg-hover-color);
   border-color: transparent;
 }
-
 /*---------------------------------------
   SITE FOOTER              
 -----------------------------------------*/
@@ -923,9 +922,15 @@ body1 {
 }
 
 .footer {
-  background: linear-gradient(to top, #8b0000, #ffa500); /* Gradient background */
+  background-image: linear-gradient(#B40F0F 0%, #FEB501 90%);
   color: white;
   padding: 20px;
+}
+
+.footer2 {
+  background-color: #DB8505;
+  color: white;
+  padding: 10px;
 }
 
 .footer-content {
@@ -948,24 +953,33 @@ body1 {
   width: 48%;
 }
 
+.footer-info2 {
+  margin-left: 100%;
+  margin-bottom: 50%;
+  margin-top: 40px;
+}
+
 .footer-info h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  color: white; /* Ensures heading text is white */
 }
 
 .footer-info p {
   font-size: 14px;
   line-height: 1.8;
   margin: 5px 0;
+  color: white; /* Ensures paragraph text is white */
 }
 
 .footer-info a {
-  color: #ffd700;
+  color: white; /* Ensures links are white */
   text-decoration: none;
 }
 
 .footer-info a:hover {
   text-decoration: underline;
+  color: white; /* Keeps links white on hover */
 }
 
 .footer-social {
@@ -974,28 +988,20 @@ body1 {
 
 .footer-social a {
   font-size: 20px;
-  color: #ffd700;
+  color: white; /* Ensures social icon links are white */
   margin-right: 15px;
   text-decoration: none;
 }
 
 .footer-social a:hover {
-  color: #fff;
+  color: white; /* Keeps social icons white on hover */
 }
 
 .footer-links {
   margin: 15px 0;
   font-size: 14px;
+  color: white; /* Ensures footer links text is white */
 }
-
-
-
-
-
-
-
-
-
 
 /*---------------------------------------
   SOCIAL ICON               
@@ -1423,13 +1429,14 @@ tr:nth-child(even) {
 
 
 .gradient-box {
-  background: linear-gradient(to right, #8B0000, #FFA500);
+  background: linear-gradient(to right, #B5130F, #FCB101);
   padding: 20px;
   text-align: center;
   color: white;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .gradient-box button {
@@ -1447,6 +1454,54 @@ tr:nth-child(even) {
 .gradient-box button:hover {
   background-color: #ff8903;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
