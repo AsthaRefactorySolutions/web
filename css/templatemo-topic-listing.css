@@ -11,7 +11,7 @@ https://templatemo.com/tm-590-topic-listing
 -----------------------------------------*/
 :root {
   --white-color: #ffffff;
-  --primary-color: #ff0000;
+  --primary-color: #000000;
   --secondary-color: #ba0909;
   --section-bg-color: #ba0909;
   --custom-btn-bg-color: #ff8400;
@@ -145,7 +145,7 @@ strong {
 }
 
 .section-overlay {
-  background-image: linear-gradient(15deg, #ff2626 0%, #46320d 100%);
+  
   position: absolute;
   top: 0;
   left: 0;
