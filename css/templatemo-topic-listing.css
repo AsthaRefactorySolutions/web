@@ -1314,13 +1314,12 @@ body1 {
 }
 .carousel-caption {
   position: absolute;
-  right: 15%;
-  bottom: 1.25rem;
-  left: 15%;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
+  color: #fff;
+  font-size: 2rem; /* Adjust font size as desired */
 }
 .carousel-dark .carousel-control-next-icon,
 .carousel-dark .carousel-control-prev-icon {
