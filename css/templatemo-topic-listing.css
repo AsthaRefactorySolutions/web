@@ -141,11 +141,10 @@ strong {
 }
 
 .section-bg {
-   background-image: linear-gradient(30deg, #B40F0F 0%, #FEB501 90%);
+  background-image: linear-gradient(30deg, #b40f0f 0%, #feb501 90%);
 }
 
 .section-overlay {
-  
   position: absolute;
   top: 0;
   left: 0;
@@ -281,11 +280,10 @@ strong {
   top: 0;
   right: 0;
   left: 0;
-  
 }
 
 .sticky-wrapper.is-sticky .navbar {
-  background-image: linear-gradient(20deg, #FFFFFF 0%, #E37500 90%);
+  background-image: linear-gradient(20deg, #ffffff 0%, #e37500 90%);
 }
 
 .navbar {
@@ -299,7 +297,6 @@ strong {
   font-size: var(--h3-font-size);
   font-weight: var(--font-weight-bold);
   display: block;
-  
 }
 
 .navbar-brand span {
@@ -310,17 +307,14 @@ strong {
   border-radius: var(--border-radius-large);
   margin: 10px;
   padding: 10px;
-
-
-  
 }
-.navbar-nav{
+.navbar-nav {
   display: flex; /* Ensure flex behavior for alignment */
   margin-left: auto; /* Pushes the menu to the right */
 }
 
 .navbar-nav .nav-link {
- display: inline-block;
+  display: inline-block;
   color: var(--white-color);
   font-family: var(--title-font-family);
   font-size: var(--menu-font-size);
@@ -496,7 +490,7 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
- background-image: linear-gradient(20deg, #FFFFFF 0%, #E37500 90%);
+  background-image: linear-gradient(20deg, #ffffff 0%, #e37500 90%);
   position: relative;
   overflow: hidden;
   padding: 2.5rem;
@@ -513,125 +507,125 @@ strong {
   border: 0;
 }
 
-  /*---------------------------------------
+/*---------------------------------------
       TOPICS              
     -----------------------------------------*/
-    .featured-section {
-      background-color: var(--secondary-color);
-      border-radius: 0 0 100px 100px;
-      padding-bottom: 100px;
-    }
+.featured-section {
+  background-color: var(--secondary-color);
+  border-radius: 0 0 100px 100px;
+  padding-bottom: 100px;
+}
 
-    .featured-section .row {
-      position: relative;
-      bottom: 100px;
-      margin-bottom: -100px;
-    }
+.featured-section .row {
+  position: relative;
+  bottom: 100px;
+  margin-bottom: -100px;
+}
 
-    .custom-block {
-      border-radius: var(--border-radius-medium);
-      position: relative;
-      overflow: hidden;
-      padding: 30px;
-      transition: transform 0.5s ease, box-shadow 0.5s ease;
-      height: 100%;
-      transform: translateY(100px); /* Start below */
-      opacity: 0; /* Hidden initially */
-      animation: fadeInUp 1s ease-out forwards;
-    }
+.custom-block {
+  border-radius: var(--border-radius-medium);
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  height: 100%;
+  transform: translateY(100px); /* Start below */
+  opacity: 0; /* Hidden initially */
+  animation: fadeInUp 1s ease-out forwards;
+}
 
-    .custom-block:hover {
-      transform: scale(1.05); /* Slight zoom on hover */
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
-    }
+.custom-block:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
+}
 
-    /* Scroll effect animation */
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(50px); /* Start from below */
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0); /* End at original position */
-      }
-    }
+/* Scroll effect animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px); /* Start from below */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}
 
-    /* Staggered animations */
-    .row .custom-block:nth-child(1) {
-      animation-delay: 0.4s;
-    }
+/* Staggered animations */
+.row .custom-block:nth-child(1) {
+  animation-delay: 0.4s;
+}
 
-    .row .custom-block:nth-child(2) {
-      animation-delay: 0.4s;
-    }
+.row .custom-block:nth-child(2) {
+  animation-delay: 0.4s;
+}
 
-    .row .custom-block:nth-child(3) {
-      animation-delay: 0.6s;
-    }
+.row .custom-block:nth-child(3) {
+  animation-delay: 0.6s;
+}
 
-    .row .custom-block:nth-child(4) {
-      animation-delay: 0.8s;
-    }
+.row .custom-block:nth-child(4) {
+  animation-delay: 0.8s;
+}
 
-    .row .custom-block:nth-child(5) {
-      animation-delay: 1s;
-    }
+.row .custom-block:nth-child(5) {
+  animation-delay: 1s;
+}
 
-    .row .custom-block:nth-child(6) {
-      animation-delay: 1.2s;
-    }
+.row .custom-block:nth-child(6) {
+  animation-delay: 1.2s;
+}
 
-    .custom-block-image {
-      display: block;
-      width: 150%;
-      height: 300px;
-      object-fit: cover;
-      margin-top: 35px;
-      transition: transform 1s ease;
-    }
+.custom-block-image {
+  display: block;
+  width: 150%;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 35px;
+  transition: transform 1s ease;
+}
 
-    .custom-block:hover .custom-block-image {
-      transform: scale(1.1); /* Zoom effect on hover */
-    }
+.custom-block:hover .custom-block-image {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
 
-    .custom-block h5 {
-      margin-bottom: 15px;
-      color: #333;
-      font-size: 1.25rem;
-      transition: color 0.5s ease;
-    }
+.custom-block h5 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.25rem;
+  transition: color 0.5s ease;
+}
 
-    .custom-block:hover h5 {
-      color: var(--secondary-color);
-    }
+.custom-block:hover h5 {
+  color: var(--secondary-color);
+}
 
-    /* Background colors for specific blocks (can adjust per product type) */
-    .bg-design {
-      background-color: #00b0ff;
-    }
+/* Background colors for specific blocks (can adjust per product type) */
+.bg-design {
+  background-color: #00b0ff;
+}
 
-    .bg-graphic {
-      background-color: #00bfa6;
-    }
+.bg-graphic {
+  background-color: #00bfa6;
+}
 
-    .bg-advertising {
-      background-color: #f50057;
-    }
+.bg-advertising {
+  background-color: #f50057;
+}
 
-    .bg-finance {
-      background-color: #536dfe;
-    }
+.bg-finance {
+  background-color: #536dfe;
+}
 
-    .bg-music {
-      background-color: #f9a826;
-    }
+.bg-music {
+  background-color: #f9a826;
+}
 
-    .bg-education {
-      background-color: #00bfa6;
-    }
+.bg-education {
+  background-color: #00bfa6;
+}
 
-    /*---------------------------------------
+/*---------------------------------------
       TOPICS               
     -----------------------------------------*/
 
@@ -914,7 +908,7 @@ blockquote {
 /*---------------------------------------
   SITE FOOTER              
 -----------------------------------------*/
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 
 body1 {
   margin: 0;
@@ -922,13 +916,13 @@ body1 {
 }
 
 .footer {
-  background-image: linear-gradient(#B40F0F 0%, #FEB501 90%);
+  background-image: linear-gradient(#b40f0f 0%, #feb501 90%);
   color: white;
   padding: 20px;
 }
 
 .footer2 {
-  background-color: #DB8505;
+  background-color: #db8505;
   color: white;
   padding: 10px;
 }
@@ -1265,6 +1259,7 @@ body1 {
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 100% 100%;
+  background-color: rgb(0, 0, 0);
 }
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
@@ -1418,17 +1413,8 @@ tr:nth-child(even) {
   margin-left: -50px;
 }
 
-
-
-
-
-
-
-
-
-
 .gradient-box {
-  background: linear-gradient(to right, #B5130F, #FCB101);
+  background: linear-gradient(to right, #b5130f, #fcb101);
   padding: 20px;
   text-align: center;
   color: white;
@@ -1453,67 +1439,3 @@ tr:nth-child(even) {
 .gradient-box button:hover {
   background-color: #ff8903;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
