@@ -1466,24 +1466,55 @@ tr:nth-child(even) {
 
 
 
-.product-features {
-  display: grid;
-  grid-template-columns: 1fr; /* One column */
-  grid-gap: 20px; /* Spacing between rows */
-  margin-left: 40px;
-  
+.product {
+  display: flex;
+  align-items: center; 
 }
 
-.product-features h2 {
-  grid-column: 1; /* Span one column */
+.product-image {
+  width: 300px; 
+  margin-right: 40px; 
 }
 
-.product-features ul {
-  grid-column: 1;
-  list-style-type: disc;
-  padding-left: 20px;
+.product-description {
+  flex-grow: 1; 
 }
 
-.product-features li {
-  margin-bottom: 10px;
+
+
+
+
+
+
+
+
+
+
+
+.containerserve {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: -40px;
+}
+
+.serve-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Space boxes evenly within each row */
+}
+
+.serve-row {
+  display: flex;
+  width: 80%; /* Ensure each row takes full width */
+  margin-bottom: 20px; /* Add spacing between rows */
+}
+
+.serve-box {
+  flex-basis: calc(33.33% - 20px); /* Calculate width for 3 columns with 20px margin */
+  margin: 10px; /* Adjust margin as needed */
+  padding: 20px;
+  background: linear-gradient(#b40f0f 0%, #feb501 90%);
+  border-radius: 5px;
+  color: white;
+  text-align: center;
 }
