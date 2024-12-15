@@ -1418,10 +1418,16 @@ tr:nth-child(even) {
 }
 
 .logo-image {
-  /* Adjust width and height as needed */
+  /* Default settings for desktop */
   width: 100%;
   height: 125px;
-  margin-left: -50px;
+}
+
+/* Adjust logo height for tablet and mobile devices */
+@media (max-width: 768px) {
+  .logo-image {
+    height: 110px;
+  }
 }
 
 .gradient-box {
