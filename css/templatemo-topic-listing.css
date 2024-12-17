@@ -815,7 +815,7 @@ blockquote {
 */
 
 .image-box {
-  background-image: url("https://img.freepik.com/free-photo/environmental-pollution-factory-exterior-night_23-2149057717.jpg?t=st=1733895030~exp=1733898630~hmac=f32bacac9323a5cd2e0bec34cda2e693c8fe2a43e43f86830e2e6e2eb1ba0f05&w=900");
+  background-image: url("https://img.freepik.com/free-photo/relax-casual-male-asian-caucasian-engineer-staff-worker-uniform-happy-conversation-after-work-warehouse-distribution-background_609648-748.jpg?t=st=1734412209~exp=1734415809~hmac=b2cc98fbb8d844aede00360bdf42bf613b8dacde70c9dd5b2bfa7f341c2566e7&w=900");
   background-size: cover; /* This resizes the image to cover the entire container */
   background-position: center; /* This centers the image within the container */
   width: 100%; /* Adjust the width as needed */
@@ -1492,33 +1492,25 @@ tr:nth-child(even) {
 
 
 
-
-
-
-.containerserve {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: -40px;
-}
-
-.serve-container {
+.industries {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; /* Space boxes evenly within each row */
+  justify-content: center;
+  gap: 20px;
 }
 
-.serve-row {
-  display: flex;
-  width: 80%; /* Ensure each row takes full width */
-  margin-bottom: 20px; /* Add spacing between rows */
-}
-
-.serve-box {
-  flex-basis: calc(33.33% - 20px); /* Calculate width for 3 columns with 20px margin */
-  margin: 10px; /* Adjust margin as needed */
+.industry {
+  border: 1px solid #ccc;
   padding: 20px;
-  background: linear-gradient(#b40f0f 0%, #feb501 90%);
-  border-radius: 5px;
-  color: white;
   text-align: center;
+  width: 300px; /* Adjust width as needed */
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.industry img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
 }
