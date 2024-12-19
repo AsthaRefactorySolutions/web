@@ -815,7 +815,7 @@ blockquote {
 */
 
 .image-box {
-  background-image: url("https://treveni.com/wp-content/uploads/2018/03/warehousing-scaled-1.jpeg");
+  background-image: url("../images/abt.jpeg");
   background-size: cover; /* This resizes the image to cover the entire container */
   background-position: center; /* This centers the image within the container */
   width: 100%; /* Adjust the width as needed */
