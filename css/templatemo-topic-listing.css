@@ -50,6 +50,9 @@ body {
   font-family: var(--body-font-family);
 }
 
+
+
+
 /*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
@@ -1593,3 +1596,6 @@ tr:nth-child(even) {
 #main-logo {
   opacity: 1;  /* Initially show the main logo */
 }
+
+
+
