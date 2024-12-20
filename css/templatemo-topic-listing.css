@@ -1508,57 +1508,31 @@ tr:nth-child(even) {
 
 
 
-
-
-/* Body styling for centering the entire layout */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    overflow-x: hidden; /* Prevent body overflow */
-}
-
-/* Hexagon container with proper alignment */
+/* Center entire hexagon section */
 .hexagon-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    grid-template-rows: repeat(3, 1fr);
-    position: relative;
-    width: 100%;
-    height: auto;
-    justify-items: center;
-
-    @media (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    grid-template-columns: repeat(4, 1fr); /* 4 in a row */
+    gap: 20px; /* Consistent spacing between items */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center items vertically */
+    margin: 0 auto; /* Center the container */
+    max-width: 1200px; /* Prevent it from stretching too wide */
+    padding: 20px;
 }
 
-/* Individual hexagon styling */
+/* Hexagon styling */
 .industry {
-    width: 400px;
-    aspect-ratio: 1;
+    width: 250px; /* Keep original SVG size */
+    aspect-ratio: 1; /* Maintain hexagon shape */
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     overflow: hidden;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    @media (max-width: 768px) {
-        width: 200px;
-        margin-bottom: 20px; /* Add margin for spacing between hexagons */
-    }
 }
 
-/* Center the SVG inside the hexagon */
+/* SVG inside the hexagon */
 .industry img {
     width: 100%;
     height: 100%;
@@ -1566,7 +1540,29 @@ body {
     object-position: center;
 }
 
-/* Middle hexagon needs to be lower */
-.middle {
-    transform: translateY(25%);
+/* Stagger specific hexagons */
+.industry:nth-child(2),
+.industry:nth-child(3),
+.industry:nth-child(6),
+.industry:nth-child(7),
+.industry:nth-child(10),
+.industry:nth-child(11),
+.industry:nth-child(14),
+.industry:nth-child(15) {
+    transform: translateY(20px);
+}
+
+.industry.middle {
+    transform: translateY(15%); /* Slightly lower the middle hexagons */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hexagon-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 hexagons per row */
+        gap: 15px;
+    }
+    .industry {
+        width: 200px; /* Resize for smaller screens */
+    }
 }
