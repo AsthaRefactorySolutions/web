@@ -1571,6 +1571,7 @@ tr:nth-child(even) {
   width: 150px; /* Adjust the width as needed */
   height: auto;
   margin-top: -50%;
+  padding-left: -60px;
 }
 
 .logo-image {
@@ -1579,7 +1580,7 @@ tr:nth-child(even) {
   transition: opacity 1s ease-in-out;
   width: 100%;
   height: auto;
-   margin-top: 1%;
+
 }
 
 .logo-image1 {
