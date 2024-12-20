@@ -48,10 +48,14 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-         <li class="nav-item dropdown">
+     <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
                   aria-expanded="false">Products</a>
               <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
@@ -68,13 +72,24 @@
                   <a class="dropdown-item" href="hangershoulder.html">Steel & Rolling (Hanger & Shoulder)</a>
                   <a class="dropdown-item" href="steelrolling.html">Steel & Rolling Plant</a>
                 </li>
-          <li class="nav-item"><a class="nav-link" href="RD.html">Advancement Center</a></li>
-          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-        </ul>
+                <!-- Other dropdown items -->
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="RD.html">Advancement Center</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
   <!-- Other Sections -->
   <section class="hero-section d-flex justify-content-center align-items-center" id="section_1"></section>
@@ -154,32 +169,30 @@
 
 
 
-
-
-    <div id="carouselExampleDark" class="carousel carousel-dark slide">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="3000">
-          <img src="images/Frame 2.svg" class="d-block w-100" alt="First Slide">
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="images/Frame 4.svg" class="d-block w-100" alt="Second Slide">
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="images/Frame 3.svg" class="d-block w-100" alt="Third Slide">
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="images/Frame 5.svg" class="d-block w-100" alt="Fourth Slide">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="4000">
+      <img src="images/Frame 2.svg" class="d-block w-100" alt="First Slide">
     </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="images/Frame 4.svg" class="d-block w-100" alt="Second Slide">
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="images/Frame 3.svg" class="d-block w-100" alt="Third Slide">
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="images/Frame 5.svg" class="d-block w-100" alt="Fourth Slide">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
 
 
@@ -623,6 +636,16 @@
   // Change logo every 3 seconds inside navbar
   setInterval(changeLogo, 3000);
 </script>
+
+
+<script>
+  var carouselElement = document.querySelector('#carouselExampleDark');
+  var carousel = new bootstrap.Carousel(carouselElement, {
+    interval: 3000, // 4 seconds
+    ride: 'carousel' // Automatically start the carousel
+  });
+</script>
+
 
   </main>
 </body>
