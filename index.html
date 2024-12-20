@@ -27,68 +27,42 @@
 </head>
 
 <body id="top">
-  <main>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <div class="logo-container">
-            <img src="images/logo.png" alt="Your Logo" class="logo-image">
-          </div>
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="products.html" id="navbarLightDropdownMenuLink" role="button"
-                 aria-expanded="false">Products</a>
-              <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                <li>
-                  <a class="dropdown-item" href="FireClay.html">Fire Clay and High Alumina Refractories</a>
-                  <a class="dropdown-item" href="BasicRefractories.html">Basic Refactories</a>
-                  <a class="dropdown-item" href="MonolithicRefractoriesMortars.html">Monolithic Refractories Mortars</a>
-                  <a class="dropdown-item" href="Insulating Refractories.html">Insulating Refactories</a>
-                  <a class="dropdown-item" href="Bottom Pouring Refractory.html">Bottom Pouring Refractories</a>
-                  <a class="dropdown-item" href="Acid Proof Refractories.html">Acid Proof Refractories</a>
-                  <a class="dropdown-item" href="Refractories Bed Materials.html">Refractories Bed Materials</a>
-                  <a class="dropdown-item" href="ceramicinsulationfiber.html">Ceramic Insulation Fibers</a>
-                  <a class="dropdown-item" href="rotarykiln.html">Rotary Kiln for Cement & Calcination Industry</a>
-                  <a class="dropdown-item" href="hangershoulder.html">Steel & Rolling (Hanger & Shoulder)</a>
-                  <a class="dropdown-item" href="steelrolling.html">Steel & Rolling Plant</a>
-
-                </li>
-                <!-- Other dropdown items -->
-              </ul>
-            </li>
+<main>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
 
 
 
-            <li class="nav-item">
-              <a class="nav-link" href="RD.html">Advancement Center</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutus.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
-          </ul>
 
+      <!-- Navbar Brand -->
+      <a class="navbar-brand" href="index.html">
+        <div class="logo-container">
+          <!-- Logos for switching -->
+          <img id="main-logo" class="logo-image1" src="images/logo.png" alt="Main Logo">
+          <img id="text-logo" class="logo-image" src="images/text logo.png" alt="Text Logo">
         </div>
+      </a>
+
+      <!-- Navbar Menu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="RD.html">Advancement Center</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <section class="hero-section d-flex justify-content-center align-items-center" id="section_1"></section>
-
+  <!-- Other Sections -->
+  <section class="hero-section d-flex justify-content-center align-items-center" id="section_1"></section>
+</main>
     <!--
             <section class="featured-section">
                 <div class="container">
@@ -618,6 +592,22 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/jquery.sticky.js"></script>
     <script src="./js/custom.js"></script>
+
+<script>
+  let logoIndex = 0;
+  const logos = ['#main-logo', '#text-logo'];  // Selectors for the logos inside navbar
+
+  function changeLogo() {
+    // Hide current logo and show next logo in navbar
+    document.querySelector(logos[logoIndex]).style.opacity = 0;
+    logoIndex = (logoIndex + 1) % logos.length;
+    document.querySelector(logos[logoIndex]).style.opacity = 1;
+  }
+
+  // Change logo every 3 seconds inside navbar
+  setInterval(changeLogo, 3000);
+</script>
+
   </main>
 </body>
 
