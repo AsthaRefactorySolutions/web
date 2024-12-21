@@ -1495,67 +1495,80 @@ tr:nth-child(even) {
 
 
 
-/* Center entire hexagon section */
+
+
+
+
+
+
+
+/* Default Desktop View */
 .hexagon-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 in a row */
-    gap: 20px; /* Consistent spacing between items */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center items vertically */
-    margin: 0 auto; /* Center the container */
-    max-width: 1200px; /* Prevent it from stretching too wide */
-    padding: 20px;
+    grid-template-columns: repeat(4, 1fr); /* 4 hexagons in a row */
+    gap: 20px; /* Spacing between hexagons */
+    justify-content: center; /* Center-align on larger screens */
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
-/* Hexagon styling */
+/* Hexagon styling for both views */
 .industry {
-    width: 250px; /* Keep original SVG size */
-    aspect-ratio: 1; /* Maintain hexagon shape */
+    width: 250px; /* Default size for PC */
+    aspect-ratio: 1; /* Maintain hexagonal shape */
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     overflow: hidden;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* SVG inside the hexagon */
 .industry img {
-    width: 100%;
+    width: 100%; /* Fill the hexagon container */
     height: 100%;
     object-fit: cover;
-    object-position: center;
 }
 
-/* Stagger specific hexagons */
-.industry:nth-child(2),
-.industry:nth-child(3),
-.industry:nth-child(6),
-.industry:nth-child(7),
-.industry:nth-child(10),
-.industry:nth-child(11),
-.industry:nth-child(14),
-.industry:nth-child(15) {
-    transform: translateY(20px);
+/* Add gap to middle 2 SVGs in Desktop View */
+.hexagon-container .industry:nth-child(2),
+.hexagon-container .industry:nth-child(3) {
+    margin-bottom: 20px; /* Add 20px margin below the middle two hexagons */
 }
 
-.industry.middle {
-    transform: translateY(15%); /* Slightly lower the middle hexagons */
+/* Apply translation for middle hexagons only in Desktop View */
+@media (min-width: 769px) {
+    .industry.middle {
+        transform: translateY(15%); /* Slightly lower the middle hexagons */
+    }
 }
 
-/* Responsive adjustments */
+/* Mobile-specific styles */
 @media (max-width: 768px) {
     .hexagon-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 hexagons per row */
-        gap: 15px;
+        display: flex; /* Flexbox for vertical stacking */
+        flex-direction: column; /* Single column layout */
+        gap: 5px; /* Consistent 5px spacing between hexagons */
+        align-items: center;
+        padding: 10px;
     }
+
     .industry {
-        width: 150px; /* Resize for smaller screens */
+        width: auto; /* Adjust to fit container */
+        max-width: 150px; /* Smaller size for mobile */
+    }
+
+    /* Remove margin adjustments for mobile */
+    .hexagon-container .industry:nth-child(2),
+    .hexagon-container .industry:nth-child(3) {
+        margin-bottom: 0; /* No margin in mobile */
+    }
+
+    /* Remove transform for middle hexagons in mobile */
+    .industry.middle {
+        transform: none; /* Ensure no vertical translation in mobile */
     }
 }
-
-
-
 
 
 
