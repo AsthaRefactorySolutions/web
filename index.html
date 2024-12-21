@@ -35,7 +35,6 @@
 
 
 
-
       <!-- Navbar Brand -->
       <a class="navbar-brand" href="index.html">
         <div class="logo-container">
@@ -94,7 +93,7 @@
     </nav>
 
   <!-- Other Sections -->
-  <section class="hero-section d-flex justify-content-center align-items-center" id="section_1"></section>
+  
 </main>
     <!--
             <section class="featured-section">
@@ -197,7 +196,7 @@
 </div>
 
 
-
+  
 
 
    <div class="col-lg-6 mt-2 text-center mx-auto">
@@ -216,13 +215,14 @@
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 0 20px;
-">
-    Aastha Refractories is a leading manufacturer, exporter, and supplier of high-quality Reftractory products catering to industries such as Steel, Cement, Glass,Petrochemicals and many more.Our product range includes High Alumina Bricks, Fire Clay Bricks, Sillimanite Bricks, Insulation Bricks, Bottom Pouring Sets, Basic Refractories, Acid-Proof Refractories, Monolithic Refractories (Mortars, Castables, Ramming Masses, and Gunning Masses), and Reftractory Bed Materials. We also specialize in custom Reftractory shapes tailored to client-specific requirements.
+    ">
+   <b> Aastha Refractories is a leading manufacturer, exporter, and supplier of high-quality Reftractory products catering to industries such as Steel, Cement, Glass,Petrochemicals and many more.Our product range includes High Alumina Bricks, Fire Clay Bricks, Sillimanite Bricks, Insulation Bricks, Bottom Pouring Sets, Basic Refractories, Acid-Proof Refractories, Monolithic Refractories (Mortars, Castables, Ramming Masses, and Gunning Masses), and Reftractory Bed Materials. We also specialize in custom Reftractory shapes tailored to client-specific requirements.
     Our products are also used in non-metallurgical industries, including applications in fired heaters, hydrogen reformers, ammonia primary and secondary reformers, cracking furnaces, incinerators, utility boilers, catalytic cracking units, coke calciners, ducting, stacks, and more.
-</p>
+</b></p>
 
 
 
+<br>
 <br>
 
    <div class="col-lg-6 mt-2 text-center mx-auto">
@@ -288,7 +288,8 @@
     </div>
 </div>
 
-
+<br>
+<br>
 
 
 
@@ -642,6 +643,28 @@
 </script>
 
 
+
+<!-- jQuery required for this solution -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+  let lastScrollTop = 0; // Track the last scroll position
+  const navbar = document.querySelector('.navbar'); // Get the navbar element
+
+  window.addEventListener('scroll', function() {
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Check if scrolling down or up
+    if (currentScroll > lastScrollTop) {
+      // Scrolling down, hide the navbar
+      navbar.classList.add('hidden');
+    } else {
+      // Scrolling up, show the navbar
+      navbar.classList.remove('hidden');
+    }
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll
+  });
+</script>
 
 
 

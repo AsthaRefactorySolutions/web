@@ -396,13 +396,80 @@ strong {
   border: 0;
 }
 
+/* For large screens (desktops, laptops) */
 @media screen and (min-width: 992px) {
+  .navbar {
+    background-image: linear-gradient(20deg, #ffffff 0%, #e37500 90%); /* Your gradient */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999; /* Ensure navbar stays on top */
+    width: 100%;
+    transition: top 0.3s; /* Smooth transition for showing/hiding */
+  }
+
   .navbar .dropdown:hover .dropdown-menu {
     opacity: 1;
     margin-top: 0;
     pointer-events: auto;
+    display: block; /* Ensure the dropdown is visible on hover */
+  }
+
+  /* Hidden navbar when scrolling down */
+  .navbar.hidden {
+    top: -100px; /* Adjust this based on navbar height */
   }
 }
+
+/* For mobile screens (max-width: 992px) */
+@media screen and (max-width: 992px) {
+  .navbar {
+    background-image: linear-gradient(20deg, #ffffff 0%, #e37500 90%); /* Your gradient */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999; /* Ensure navbar stays on top */
+    width: 100%;
+    transition: top 0.3s; /* Smooth transition for showing/hiding */
+  }
+
+  .navbar .dropdown .dropdown-menu {
+    opacity: 0;
+    pointer-events: none;
+    display: none; /* Hide the dropdown initially */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  .navbar .dropdown.show .dropdown-menu {
+    opacity: 1;
+    pointer-events: auto;
+    display: block; /* Show the dropdown when 'show' class is added */
+  }
+
+  /* Make sure the dropdown menu is aligned with the navbar */
+  .navbar-toggler {
+    z-index: 1050; /* Ensure the hamburger button stays on top */
+  }
+
+  /* Ensure the dropdown remains aligned and inside the navbar */
+  .navbar .dropdown-menu {
+    position: absolute; /* Position dropdown inside the navbar */
+    top: 100%; /* Align it below the dropdown button */
+    left: 0;
+    right: 0;
+    background-color: white; /* Ensure visibility */
+    display: none; /* Hide by default */
+    z-index: 1040; /* Make sure dropdown appears above other navbar items */
+  }
+}
+
+/* Hidden navbar on scroll down */
+.navbar.hidden {
+  top: -100px; /* Adjust this based on navbar height */
+}
+
 
 .navbar-icon {
   background: var(--white-color);
@@ -831,10 +898,10 @@ blockquote {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/abt.jpeg");
+  background-image: url("../images/abt.jpg");
   background-size: cover;
   background-position: center;
-  filter: blur(5px); /* Only the background image is blurred */
+ 
   z-index: -1; /* Place the background behind the content */
   opacity: 1; /* Ensure visibility of the image */
 }
@@ -1574,10 +1641,6 @@ tr:nth-child(even) {
 
 
 
-
-
-
-
 /* Container for the logo inside navbar */
 .logo-container {
   position: relative;
@@ -1593,14 +1656,13 @@ tr:nth-child(even) {
   transition: opacity 1s ease-in-out;
   width: 100%;
   height: auto;
-
 }
 
 .logo-image1 {
   position: absolute;
-  opacity: 0;
+  opacity: 1; /* Ensure the main logo is visible */
   transition: opacity 1s ease-in-out;
-  width: 60%; /* Reduce the width to 80% of the container's width */
+  width: 60%; /* Reduce the width to 60% of the container's width */
   height: auto; /* Keep the height proportional */
   max-height: 150px; /* Limit the height to make the logo smaller */
   margin-top: 23%;
@@ -1611,5 +1673,29 @@ tr:nth-child(even) {
   opacity: 1;  /* Initially show the main logo */
 }
 
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .logo-container {
+    width: 120px; /* Adjust width for mobile */
+    margin-top: 0; /* Reset margin for mobile */
+    padding-left: 0; /* Reset padding for mobile */
+  }
 
+  /* Adjustments for the first logo image */
+  .logo-image1 {
+    width: 50%; /* Reduce the width for mobile */
+    margin-top: 0; /* Set margin-top to 0 to move it up */
+    margin-left: 15px; /* Adjust left margin for better positioning */
+    max-height: 100px; /* Adjust max height for mobile */
+    transform: translateY(-30px); /* Move the logo up even more */
+  }
 
+  /* Adjustments for the second logo image (move it slightly down) */
+  .logo-image {
+    opacity: 1;  /* Show the text logo */
+    width: 100%; /* Ensure the text logo takes up the full width */
+    max-height: 100px; /* Limit the height to fit on mobile */
+    margin-top: -37px; /* Move the text logo slightly down */
+    transform: translateY(-10px); /* Move the text logo slightly down */
+  }
+}
