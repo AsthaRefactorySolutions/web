@@ -1469,7 +1469,7 @@ tr:nth-child(even) {
 }
 
 .main-image {
-  width: 50%;
+  width: 100%;
   margin: 20px auto;
 }
 
